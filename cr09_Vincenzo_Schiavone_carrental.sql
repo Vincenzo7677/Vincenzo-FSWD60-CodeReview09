@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Erstellungszeit: 08. Mrz 2019 um 22:15
+-- Erstellungszeit: 08. Mrz 2019 um 23:24
 -- Server-Version: 10.1.38-MariaDB
 -- PHP-Version: 7.3.2
 
@@ -234,7 +234,8 @@ ALTER TABLE `booking`
 -- Constraints der Tabelle `cars`
 --
 ALTER TABLE `cars`
-  ADD CONSTRAINT `cars_ibfk_1` FOREIGN KEY (`cars_id`) REFERENCES `customer` (`customer_id`);
+  ADD CONSTRAINT `cars_ibfk_1` FOREIGN KEY (`cars_id`) REFERENCES `customer` (`customer_id`),
+  ADD CONSTRAINT `cars_ibfk_2` FOREIGN KEY (`cars_id`) REFERENCES `customer` (`customer_id`);
 
 --
 -- Constraints der Tabelle `car_category`
